@@ -1,6 +1,6 @@
 const fs = require("fs")
 
-let data = ""
+let data = "questao 01"
 
 fs.writeFile('teste.txt', data, function (err){
     if(err){
