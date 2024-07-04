@@ -1,7 +1,30 @@
-fs.readFile
+### fs.readFile
+
+```js
+const fs = require('fs')
+fs.readFile('teste.txt', 'utf8' , (err, data) => {
+  if (err) {
+    console.error(err)
+    return
+  }
+  console.log(data)
+})
+```
 ### fs.writeFile escrever so que sobrescrever
 
+```js
+const fs = require("fs")
 
+let data = "questao 01"
+
+fs.writeFile('teste.txt', data, function (err){
+    if(err){
+        console.log(`Deu um erro muito louco  ${err}`)
+    }else {
+        console.log("Arquivo criado com sucesso")
+    }
+})
+```
 ### fs.mkdir criar pastas e subs pastas
 ``` js
 const fs = require("fs")
